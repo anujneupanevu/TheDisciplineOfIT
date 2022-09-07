@@ -3,8 +3,7 @@ namespace TheDisciplineOfIT.Models
 {
     public class Courses
     {
-        public Courses()
-        {
-        }
+        public string CourseID;
+        public string CourseName;
     }
 }

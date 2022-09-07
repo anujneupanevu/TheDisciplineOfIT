@@ -3,8 +3,9 @@ namespace TheDisciplineOfIT.Models
 {
     public class Request
     {
-        public Request()
-        {
-        }
+        public string RequestID;
+        public DateTime Date;
+        public DateTime Time;
+        public string Status;
     }
 }

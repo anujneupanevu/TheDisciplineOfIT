@@ -3,8 +3,8 @@ namespace TheDisciplineOfIT.Models
 {
     public class Teachers
     {
-        public Teachers()
-        {
-        }
+        public string TeacherID;
+        public string TeacherName;
+        public string TeahcerQualification;
     }
 }
