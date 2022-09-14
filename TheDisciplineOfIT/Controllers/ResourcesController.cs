@@ -8,23 +8,10 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace TheDisciplineOfIT.Controllers
 {
-    public class RequestController : Controller
+    public class ResourcesController : Controller
     {
         // GET: /<controller>/
         public IActionResult Index()
-        {
-            return View();
-        }
-        public IActionResult Courses()
-        {
-            return View();
-        }
-        
-        public IActionResult Teachers()
-        {
-            return View();
-        }
-        public IActionResult Units()
         {
             return View();
         }
