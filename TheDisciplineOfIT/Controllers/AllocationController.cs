@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace TheDisciplineOfIT.Controllers
 {
-    public class ResourcesController : Controller
+    public class AllocationController : Controller
     {
         // GET: /<controller>/
         public IActionResult Index()

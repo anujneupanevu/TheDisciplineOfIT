@@ -12,6 +12,5 @@ namespace TheDisciplineOfIT.Models
         public string Address { get; set; }
 
         public ICollection<Courses> Courses { get; set; }
-        public ICollection<Units> Units { get; set; }
     }
 }

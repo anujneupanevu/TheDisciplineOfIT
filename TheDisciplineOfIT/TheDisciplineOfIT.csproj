@@ -7,15 +7,15 @@
   <ItemGroup>
     <None Remove="Views\Request\" />
     <None Remove="Microsoft.EntityFrameworkCore" />
-    <None Remove="Views\Resources\" />
     <None Remove="Microsoft.EntityFrameworkCore.Design" />
     <None Remove="Microsoft.VisualStudio.Web.CodeGeneration.Design" />
     <None Remove="Data\" />
+    <None Remove="Views\Allocation\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Request\" />
-    <Folder Include="Views\Resources\" />
     <Folder Include="Data\" />
+    <Folder Include="Views\Allocation\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.0" />
