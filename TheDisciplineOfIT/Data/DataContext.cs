@@ -12,12 +12,12 @@ namespace TheDisciplineOfIT.Data
         {
         }
 
-        public DbSet<Students> Student { get; set; }
-        public DbSet<Request> Request { get; set; }
-        public DbSet<Resources> Resource { get; set; }
-        public DbSet<Teachers> Teacher { get; set; }
-        public DbSet<Units> Unit { get; set; }
-        public DbSet<Courses> Course { get; set; }
+        public DbSet<Students> Students { get; set; }
+        public DbSet<Request> Requests { get; set; }
+        public DbSet<Resources> Resources { get; set; }
+        public DbSet<Teachers> Teachers { get; set; }
+        public DbSet<Units> Units { get; set; }
+        public DbSet<Courses> Courses { get; set; }
 
 
     }

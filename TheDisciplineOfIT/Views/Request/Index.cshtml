@@ -1,15 +1,31 @@
-﻿@{
+﻿@model IEnumerable<TheDisciplineOfIT.Models.Request>
+
+@{
     ViewData["Title"] = "Request Resources";
 }
-<div>
-    <h1 class="display-4">Welcome to Resource Request</h1>
+@*<div>
+        <h1 class="display-4">Welcome to Resource Request</h1>
 
-    <h4>Fill in Request Form</h4>
-    <form>
-        <label for="sid">StudentID</label>
-        <input type="text" name="fmane" /><br />
-        <label for="rid">ResoureID</label>
-        <input type="text" name="rid" /><br />
-    </form>
-    <button class="btn btn-success">Submit</button>
-</div>
+        <h4>Fill in Request Form</h4>
+        <form>
+            <label for="sid">StudentID</label>
+            <input type="text" name="fmane" /><br />
+            <label for="rid">ResoureID</label>
+            <input type="text" name="rid" /><br />
+        </form>
+        <button class="btn btn-success">Submit</button>
+    </div>*@
+<select class="form-select" aria-label="StudentID">
+    <option selected>Select Your StudentID</option>
+    @foreach (var item in Model)
+    {
+        <option value="@Html.DisplayFor(modelItem => item.StudentID)">@Html.DisplayFor(modelItem => item.StudentID)</option>
+    }
+</select>
+<select class="form-select" aria-label="ResourceName">
+    <option selected>Select Resoure to Request</option>
+    @foreach (var item in Model)
+    {
+        <option value="@Html.DisplayFor(modelItem => item.ResourceName)">@Html.DisplayFor(modelItem => item.ResourceName)</option>
+    }
+</select>

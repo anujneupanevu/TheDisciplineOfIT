@@ -11,6 +11,11 @@ namespace TheDisciplineOfIT.Models
         public string TeacherName { get; set; }
         public string TeahcerQualification { get; set; }
 
+        public Teachers(ICollection<Units> units)
+        {
+            Units = units;
+        }
+
         public ICollection<Units> Units { get; set; }
     }
 }

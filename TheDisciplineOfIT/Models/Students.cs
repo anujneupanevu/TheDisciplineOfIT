@@ -12,5 +12,10 @@ namespace TheDisciplineOfIT.Models
         public string Address { get; set; }
 
         public ICollection<Courses> Courses { get; set; }
+
+        public Students(ICollection<Courses> courses)
+        {
+            Courses = courses;
+        }
     }
 }

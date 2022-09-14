@@ -12,7 +12,17 @@ namespace TheDisciplineOfIT.Models
         public DateTime Time { get; set; }
         public string Status { get; set; }
 
-        public ICollection<Students> Students { get; set; }
-        public ICollection<Resources> Resources { get; set; }
+        public ICollection<Students> StudentID { get; set; }
+        public ICollection<Resources> ResourceName { get; set; }
+
+        public Request(ICollection<Students> studentid)
+        {
+            StudentID = studentid;
+        }
+
+        public Request(ICollection<Resources> resourceName)
+        {
+            ResourceName = resourceName;
+        }
     }
 }
