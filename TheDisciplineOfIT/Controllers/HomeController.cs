@@ -22,7 +22,18 @@ namespace TheDisciplineOfIT.Controllers
         {
             return View();
         }
-
+        public IActionResult Courses()
+        {
+            return View();
+        }
+        public IActionResult Teachers()
+        {
+            return View();
+        }
+        public IActionResult Units()
+        {
+            return View();
+        }
         public IActionResult Privacy()
         {
             return View();
