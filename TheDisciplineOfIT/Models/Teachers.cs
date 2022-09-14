@@ -1,20 +1,15 @@
 ﻿using System;
-using System.ComponentModel.DataAnnotations;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using TheDisciplineOfIT.Models;
 
 namespace TheDisciplineOfIT.Models
 {
-    public class Teachers
+    public class Teachers : Person
     {
         [Key]
-        public string TeacherID { get; set; }
-        public string TeacherName { get; set; }
-        public string TeahcerQualification { get; set; }
-
-        public Teachers(ICollection<Units> units)
-        {
-            Units = units;
-        }
+        public int TeacherID { get; set; }
 
         public ICollection<Units> Units { get; set; }
     }
